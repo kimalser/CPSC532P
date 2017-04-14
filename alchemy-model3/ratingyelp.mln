@@ -1,0 +1,10 @@
+female(x)
+user(x)
+rating_gr_eq_4(x,y)
+rating_less_4(x,y)
+female(u)
+rating_gr_eq_4(u,+i) => female(u)
+!rating_gr_eq_4(u,+i) => female(u)
+rating_less_4(u,+i) => female(u)
+!rating_less_4(u,+i) => female(u)
+

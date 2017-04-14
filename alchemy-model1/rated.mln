@@ -1,0 +1,4 @@
+female(x)
+rated(x,y)
+female(u)
+female(u) ^ rated(u,+i)

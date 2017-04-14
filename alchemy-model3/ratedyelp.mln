@@ -1,0 +1,6 @@
+female(x)
+user(x)
+rated(x,y)
+female(u)
+rated(u,+i) => female(u)
+!rated(u,+i) => female(u)

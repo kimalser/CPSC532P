@@ -18,7 +18,7 @@ from sklearn.neural_network import MLPClassifier
 import math
 
 
-with open("ml-100k/u.data",'r') as ratingsfile:
+with open("data/ml-100k/u.data",'r') as ratingsfile:
     all_ratings = (tuple(int(e) for e in line.strip().split('\t'))
                         for line in ratingsfile)
     ratings = [eg for eg in all_ratings if eg[3] <= 884673930]
@@ -28,7 +28,7 @@ with open("ml-100k/u.data",'r') as ratingsfile:
     test_users = all_users - training_users
 
 # extract the training and test dictionaries
-with open("ml-100k/u.user",'r') as usersfile:
+with open("data/ml-100k/u.user",'r') as usersfile:
     user_info = (line.strip().split('|') for line in usersfile)
     gender_train, gender_test = {},{}
     for (u,a,g,o,p) in user_info:
